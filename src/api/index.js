@@ -60,8 +60,6 @@ export default {
             const options = {
                 method: 'POST',
                 headers: header,
-                // dataType: 'json',
-                // contentType: 'application/json',
                 data: data,
                 url: this.getBaseUrl() + url,
               };

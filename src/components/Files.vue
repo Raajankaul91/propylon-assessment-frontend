@@ -98,7 +98,7 @@ export default {
                     this.files = response.files;
                     this.filteredFile = response.files;
                 }else{
-                    console.log("Could not retreive files")
+                    console.log(error.message)
                 }
             });
         },

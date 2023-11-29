@@ -33,11 +33,8 @@ export default {
             }
 
             localStorage.removeItem('access_token');
-            this.processing = true;
             apiAuth.login((error, response) => {
-                this.processing = false;
                 if (error) {
-                    this.showToast = true;
                     console.log("NOT LOGGED IN");
                 } else {
                     localStorage.setItem("access_token", response.data.token);
