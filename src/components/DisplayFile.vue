@@ -28,7 +28,7 @@ export default {
         getDisplayFile: function(){
 
             apiFile.getFile((error, response) => {
-                console.log(response.file)
+                
                 if(response){
                     this.displayFile = response.file;
                 }else{

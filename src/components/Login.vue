@@ -40,7 +40,6 @@ export default {
                     this.showToast = true;
                     console.log("NOT LOGGED IN");
                 } else {
-                  console.log(response.data.token)
                     localStorage.setItem("access_token", response.data.token);
                     console.log("LOGGED IN");
                     this.$emit("loggedIn", true)

@@ -12,7 +12,7 @@ export function getFiles(callback) {
 }
 
 export function addFile(callback, data) {
-    console.log(data)
+    
     api.post('api/file_versions/', data, (isError, response) =>{
         if (!isError) {
             callback(null, response);
